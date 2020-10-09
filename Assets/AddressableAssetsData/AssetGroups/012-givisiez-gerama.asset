@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: 012-givisiez-gerama
+  m_EditorClassIdentifier: 
+  m_GroupName: 012-givisiez-gerama
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 2646e1b42daf9854d89b6cca0bad303a
+  m_SerializeEntries:
+  - m_GUID: 1ae56e824005ea642b7a09c5d1c10702
+    m_Address: Addressable/012-givisiez-gerama/ar-scene
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - 012-givisiez-gerama
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 353d2e2af7f38a74290612ec7fae4daa
+    m_Address: Addressable/012-givisiez-gerama/panorama-scene
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - 012-givisiez-gerama
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9b89d65c547a1aa4898d84f5cccae8c7
+    m_Address: Addressable/012-givisiez-gerama/launcher
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - 012-givisiez-gerama
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a8158643445b5554c8f8faa7db3d60d6
+    m_Address: Addressable/012-givisiez-gerama/info-panel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - 012-givisiez-gerama
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 99edbef5af97b984e9b6bd8dd5f17951, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 168e682e3758ede4dbec67abc5ba1628, type: 2}
+    - {fileID: 11400000, guid: c200a4c9a762e3c459d668a2f8042162, type: 2}
