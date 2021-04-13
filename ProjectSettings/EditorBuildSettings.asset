@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Projects/000-argon-xr/Scenes/ArgonXR-Menu.unity
+    path: Assets/ArgonXR/Scenes/000-main-menu.unity
     guid: a7bd71ac44aba1940b1ac58b39a407f4
   - enabled: 0
-    path: Assets/Projects/012-givisiez-gerama/Scenes/012-givisiez-gerama_panorama.unity
+    path: Assets/ArgonXR/Scenes/012-givisiez-gerama_panorama.unity
     guid: 353d2e2af7f38a74290612ec7fae4daa
   - enabled: 0
-    path: Assets/Projects/012-givisiez-gerama/Scenes/012-givisiez-gerama_ar.unity
+    path: Assets/ArgonXR/Scenes/012-givisiez-gerama_ar.unity
     guid: 1ae56e824005ea642b7a09c5d1c10702
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 8687bcd6676a00842ab360116975a9ed,
