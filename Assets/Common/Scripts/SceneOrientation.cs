@@ -1,17 +1,17 @@
-﻿/*===============================================================================
-Copyright (c) 2018 PTC Inc. All Rights Reserved.
+﻿using UnityEngine;
 
-Vuforia is a trademark of PTC Inc., registered in the United States and other 
-countries.
-===============================================================================*/
-
-using UnityEngine;
-
-public class SceneOrientation : MonoBehaviour {
+/* <summary>
+ * Force the orientation of the current scene.
+ * </summary>
+ * */
+public class SceneOrientation : MonoBehaviour
+{
 
     #region PUBLIC_MEMBERS
 
-    public enum Orientation {
+    // possible orientation for this project
+    public enum Orientation
+    {
         AUTOROTATION,
         PORTRAIT,
         LANDSCAPE
@@ -24,9 +24,9 @@ public class SceneOrientation : MonoBehaviour {
 
     #region MONOBEHAVIOUR_METHODS
 
-    void Awake()
+    protected void Awake()
     {
-        SetSceneOrientation();
+           SetSceneOrientation();
     }
 
     #endregion // MONOBEHAVIOUR_METHODS
@@ -34,6 +34,7 @@ public class SceneOrientation : MonoBehaviour {
 
     #region PRIVATE_METHODS
 
+    // set the scene orientation
     private void SetSceneOrientation()
     {
         switch (sceneOrientation)
@@ -51,5 +52,4 @@ public class SceneOrientation : MonoBehaviour {
     }
 
     #endregion // PRIVATE_METHODS
-
 }
