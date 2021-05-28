@@ -74,6 +74,8 @@ public class ProjectManager : MonoBehaviour
 
     protected void Start()
     {
+        //Caching.ClearCache();
+
         m_projectPanel = FindObjectOfType<ProjectPanel>();
         m_addProjects = FindObjectOfType<AddProjects>();
 

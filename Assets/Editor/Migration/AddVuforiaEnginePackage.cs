@@ -10,7 +10,7 @@ public class AddVuforiaEnginePackage
 {
     static readonly string sPackagesPath = Path.Combine(Application.dataPath, "..", "Packages");
     static readonly string sManifestJsonPath = Path.Combine(sPackagesPath, "manifest.json");
-    const string VUFORIA_VERSION = "9.8.5";
+    const string VUFORIA_VERSION = "9.8.8";
     const string PACKAGE_KEY = "com.ptc.vuforia.engine";
     const string GIT_URL = "git+https://git-packages.developer.vuforia.com";
 

@@ -27,8 +27,7 @@ public class ProjectLoader : MonoBehaviour
     {   
         if (!m_dead && m_project.handle.IsValid())
         {
-            progression.fillAmount = m_project.handle.PercentComplete;
-
+            progression.fillAmount = m_project.handle.GetDownloadStatus().Percent;
             if (m_project.handle.Status == AsyncOperationStatus.Succeeded)
             {
                 m_dead = true;

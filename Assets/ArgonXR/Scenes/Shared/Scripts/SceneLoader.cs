@@ -14,6 +14,9 @@ public class SceneLoader : MonoBehaviour
 
     #region PRIVATE_MEMBER_VARIABLES
 
+    private AsyncOperationHandle m_test;
+    private bool a = false;
+
     #endregion // PRIVATE_MEMBER_VARIABLES
 
 
@@ -26,6 +29,16 @@ public class SceneLoader : MonoBehaviour
 
     protected void Start()
     {
+
+    }
+
+    protected void Update()
+    {
+        if (a)
+        {
+
+            Debug.Log(m_test.Status);
+        }
 
     }
 
@@ -45,7 +58,8 @@ public class SceneLoader : MonoBehaviour
     {
         Debug.Log("Loading scene by address : " + address);
 
-        Addressables.LoadSceneAsync(address, LoadSceneMode.Single);
+        m_test = Addressables.LoadSceneAsync(address, LoadSceneMode.Single);
+        a = true;
     }
 
     #endregion // PUBLIC_METHODS
