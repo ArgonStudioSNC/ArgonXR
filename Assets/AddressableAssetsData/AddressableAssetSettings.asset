@@ -143,7 +143,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 299f76f0adf976d4fa67c84473f63057, type: 2}
   - {fileID: 11400000, guid: 7e7f2b8770eaaa640b198b66daedb786, type: 2}
   - {fileID: 11400000, guid: 2d610ae1a06d5374bbf5731cf85ede1c, type: 2}
-  m_ActiveProfileId: 3d642c7c418512e47a61446e57bcfe4f
+  m_ActiveProfileId: d313d38c7675d8547aa03407fa40bc8a
   m_HostingServicesManager:
     m_HostingServiceInfos:
     - classRef: UnityEditor.AddressableAssets.HostingServices.HttpHostingService,
@@ -152,11 +152,11 @@ MonoBehaviour:
         m_SerializedData:
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Int32
-          m_Data: 54247
+          m_Data: 50844
           m_Key: HostingServicePort
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.String
-          m_Data: HostedData/Android
+          m_Data: ServerData/Android
           m_Key: ContentRoot
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Boolean

@@ -22,6 +22,7 @@ public class DraggablePanel : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
     private RectTransform m_rectTransform;
     private Image mUIMaskImage;
     private CanvasScaler mScaler;
+    private MagicWindow m_magicWindow;
 
     #endregion // PRIVATE_MEMBER_VARIABLES
 
@@ -35,6 +36,7 @@ public class DraggablePanel : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
         mCurrentPosition = 0.0f;
         mUIMaskImage = UIMask.GetComponent<Image>();
         mScaler = GetComponentInParent<CanvasScaler>();
+        m_magicWindow = FindObjectOfType<MagicWindow>();
     }
 
     protected void Update()
@@ -44,6 +46,10 @@ public class DraggablePanel : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
         color.a = (mCurrentPosition / mMaxPosition) / 2.0f;
         mUIMaskImage.color = color;
         m_rectTransform.anchoredPosition = new Vector2(mCurrentPosition * -1.0f, 0.0f);
+        if (m_magicWindow)
+        {
+            m_magicWindow.enabled = mCurrentPosition > 0.0f ? false : true;
+        }
     }
 
     #endregion // MONOBEHAVIOUR_METHODS
