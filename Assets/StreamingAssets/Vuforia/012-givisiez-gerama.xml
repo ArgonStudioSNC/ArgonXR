@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="06-21_A002" size="20.000000 20.652542" />
-    <ImageTarget name="06-19_A101-201" size="20.000000 20.652542" />
-    <ImageTarget name="06-34_C0001" size="20.000000 20.313559" />
-    <ImageTarget name="06-33_C0002" size="20.000000 20.313559" />
-    <ImageTarget name="06-32_C001" size="20.000000 20.313559" />
-    <ImageTarget name="06-31_C002" size="20.000000 20.313559" />
-    <ImageTarget name="06-30_C003" size="20.000000 20.313559" />
-    <ImageTarget name="06-29_C004" size="20.000000 20.313559" />
-    <ImageTarget name="06-28_C101-201" size="20.000000 20.313559" />
-    <ImageTarget name="06-27_C102-202" size="20.000000 20.313559" />
-    <ImageTarget name="06-26_C103-203" size="20.000000 20.313559" />
-    <ImageTarget name="06-25_C104-204" size="20.000000 20.313559" />
-    <ImageTarget name="06-24_C302" size="20.000000 20.313559" />
-    <ImageTarget name="06-23_C301" size="20.000000 20.313559" />
-    <ImageTarget name="06-22_A001" size="20.000000 20.652542" />
-    <ImageTarget name="06-20_A003" size="20.000000 20.652542" />
-    <ImageTarget name="06-18_A102-202" size="20.000000 20.652542" />
-    <ImageTarget name="06-17_A103-203" size="20.000000 20.652542" />
-    <ImageTarget name="06-16_A104-204" size="20.000000 20.652542" />
-    <ImageTarget name="06-15_A301" size="20.000000 20.652542" />
-    <ImageTarget name="06-14_A302" size="20.000000 20.652542" />
+    <ImageTarget name="06-14_A302" size="20.000000 21.907587" />
+    <ImageTarget name="06-15_A301" size="20.000000 21.907587" />
+    <ImageTarget name="06-16_A104-204" size="20.000000 21.907587" />
+    <ImageTarget name="06-17_A103-203" size="20.000000 21.907587" />
+    <ImageTarget name="06-18_A102-202" size="20.000000 21.907587" />
+    <ImageTarget name="06-19_A101-201" size="20.000000 21.907587" />
+    <ImageTarget name="06-20_A003" size="20.000000 21.907587" />
+    <ImageTarget name="06-21_A002" size="20.000000 21.907587" />
+    <ImageTarget name="06-22_A001" size="20.000000 21.907587" />
+    <ImageTarget name="06-23_C301" size="20.000000 21.907587" />
+    <ImageTarget name="06-24_C302" size="20.000000 21.907587" />
+    <ImageTarget name="06-25_C104-204" size="20.000000 21.907587" />
+    <ImageTarget name="06-26_C103-203" size="20.000000 21.907587" />
+    <ImageTarget name="06-27_C102-202" size="20.000000 21.907587" />
+    <ImageTarget name="06-28_C101-201" size="20.000000 21.907587" />
+    <ImageTarget name="06-29_C004" size="20.000000 21.907587" />
+    <ImageTarget name="06-30_C003" size="20.000000 21.907587" />
+    <ImageTarget name="06-31_C002" size="20.000000 21.907587" />
+    <ImageTarget name="06-32_C001" size="20.000000 21.907587" />
+    <ImageTarget name="06-33_C0002" size="20.000000 21.907587" />
+    <ImageTarget name="06-34_C0001" size="20.000000 21.907587" />
   </Tracking>
 </QCARConfig>

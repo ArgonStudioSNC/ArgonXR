@@ -139,6 +139,5 @@ public class ProjectManager : MonoBehaviour
 
     #region PRIVATE_METHODS
 
-
     #endregion // PRIVATE_METHODS
 }

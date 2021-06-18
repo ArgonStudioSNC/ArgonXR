@@ -11,8 +11,13 @@ public class AddProjectPanelElem : MonoBehaviour
     public Button button;
     public Sprite add;
     public Sprite remove;
+    public Color addColor;
+    public Color removeColor;
+
 
     #endregion // PUBLIC_MEMBER_VARIABLES
+
+
 
 
     #region PUBLIC_METHODS
@@ -22,6 +27,7 @@ public class AddProjectPanelElem : MonoBehaviour
         nameText.text = projet.name;
         clientText.text = projet.client;
         button.image.sprite = isSelected ? remove : add;
+        button.image.color = isSelected ? removeColor : addColor;
 
         button.onClick.AddListener(ButtonClicked);
         

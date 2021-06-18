@@ -3,11 +3,15 @@ using UnityEngine.UI;
 using static ProjectManager;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using System;
 
 public class ProjectLoader : MonoBehaviour
 {
     #region PUBLIC_MEMBER_VARIABLES
 
+    public Text nameText;
+    public Text clientText;
+    public Text statusText;
     public Image progression;
 
     #endregion // PUBLIC_MEMBER_VARIABLES
@@ -27,7 +31,9 @@ public class ProjectLoader : MonoBehaviour
     {   
         if (!m_dead && m_project.handle.IsValid())
         {
-            progression.fillAmount = m_project.handle.GetDownloadStatus().Percent;
+            DownloadStatus dl = m_project.handle.GetDownloadStatus();
+            progression.fillAmount = dl.Percent;
+            statusText.text = "Téléchargement : " + Math.Round(ConvertBytesToMegabytes(dl.DownloadedBytes), 2) + " / " + Math.Round(ConvertBytesToMegabytes(dl.TotalBytes), 2) + " Mo";
             if (m_project.handle.Status == AsyncOperationStatus.Succeeded)
             {
                 m_dead = true;
@@ -43,7 +49,13 @@ public class ProjectLoader : MonoBehaviour
 
     public void SetProject(Project p)
     {
-        if (p != null) m_project = p;
+        if (p != null)
+        {
+            m_project = p;
+            nameText.text = p.name;
+            clientText.text = p.client;
+            statusText.text = "Status : Début du téléchargement";
+        }
     }
 
     #endregion // PUBLIC_METHODS
@@ -65,6 +77,11 @@ public class ProjectLoader : MonoBehaviour
                 LayoutRebuilder.ForceRebuildLayoutImmediate(obj.Result.transform.GetComponent<RectTransform>());
             }
         }
+    }
+
+    private static double ConvertBytesToMegabytes(long bytes)
+    {
+        return (bytes / 1024f) / 1024f;
     }
 
     #endregion // PRIVATE_METHODS
