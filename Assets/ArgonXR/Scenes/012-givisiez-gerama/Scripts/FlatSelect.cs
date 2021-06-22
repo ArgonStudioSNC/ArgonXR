@@ -29,10 +29,10 @@ public class FlatSelect : MonoBehaviour
         subTitle.text = flat.subTitle.text;
         PlayerPrefs.SetInt("012_givisiez_flatId", id);
 
+        entities[id].gameObject.SetActive(false);
         foreach (Transform entity in entities)
         {
             entity.gameObject.SetActive(true);
         }
-        entities[id].gameObject.SetActive(false);
     }
 }

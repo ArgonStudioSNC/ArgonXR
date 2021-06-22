@@ -73,6 +73,7 @@ public class ProjectLoader : MonoBehaviour
         {
             if (obj.IsValid())
             {
+                Debug.Log("Addressables.InstantiateAsync Completed");
                 Destroy(gameObject);
                 LayoutRebuilder.ForceRebuildLayoutImmediate(obj.Result.transform.GetComponent<RectTransform>());
             }

@@ -80,7 +80,7 @@ MonoBehaviour:
       - m_Id: fffcde6286ce0f6488def409db427dc4
         m_Value: ServerData/[BuildTarget]
       - m_Id: bc977dd7ac11a3848a950cbb1167a72d
-        m_Value: https://b989fc09-860f-4199-b139-dfcb47fc0f77.client-api.unity3dusercontent.com/client_api/v1/buckets/51fc14dc-1907-46a7-81e3-12505f73641b/release_by_badge/production/entry_by_path/content/?path=
+        m_Value: https://b989fc09-860f-4199-b139-dfcb47fc0f77.client-api.unity3dusercontent.com/client_api/v1/buckets/51fc14dc-1907-46a7-81e3-12505f73641b/release_by_badge/production-v1-03-02/entry_by_path/content/?path=
     - m_InheritedParent: 
       m_Id: cd15a818ec1e47a47a0e22c1f1f792f0
       m_ProfileName: Unity CCD Windows Standalone
@@ -108,7 +108,7 @@ MonoBehaviour:
       - m_Id: fffcde6286ce0f6488def409db427dc4
         m_Value: ServerData/[BuildTarget]
       - m_Id: bc977dd7ac11a3848a950cbb1167a72d
-        m_Value: https://b989fc09-860f-4199-b139-dfcb47fc0f77.client-api.unity3dusercontent.com/client_api/v1/buckets/5b55c6da-27c5-435c-926c-27d0687339c5/release_by_badge/latest/entry_by_path/content/?path=
+        m_Value: https://b989fc09-860f-4199-b139-dfcb47fc0f77.client-api.unity3dusercontent.com/client_api/v1/buckets/5b55c6da-27c5-435c-926c-27d0687339c5/release_by_badge/production-v1-03-02/entry_by_path/content/?path=
     m_ProfileEntryNames:
     - m_Id: 6db0780033aebe94e95b53515094ae09
       m_Name: BuildTarget
@@ -143,7 +143,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 299f76f0adf976d4fa67c84473f63057, type: 2}
   - {fileID: 11400000, guid: 7e7f2b8770eaaa640b198b66daedb786, type: 2}
   - {fileID: 11400000, guid: 2d610ae1a06d5374bbf5731cf85ede1c, type: 2}
-  m_ActiveProfileId: d313d38c7675d8547aa03407fa40bc8a
+  m_ActiveProfileId: 759a8fa95250c234da08c895f9970eba
   m_HostingServicesManager:
     m_HostingServiceInfos:
     - classRef: UnityEditor.AddressableAssets.HostingServices.HttpHostingService,
@@ -152,11 +152,11 @@ MonoBehaviour:
         m_SerializedData:
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Int32
-          m_Data: 54975
+          m_Data: 64192
           m_Key: HostingServicePort
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.String
-          m_Data: ServerData/Android
+          m_Data: ServerData/iOS
           m_Key: ContentRoot
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Boolean

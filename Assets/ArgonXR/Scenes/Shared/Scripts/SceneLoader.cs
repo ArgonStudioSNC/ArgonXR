@@ -58,12 +58,14 @@ public class SceneLoader : MonoBehaviour
     protected void Update()
     {
         //Debug.Log(ActiveLoadingState);
+        //Debug.Log(SceneManager.GetActiveScene().name);
+
         switch (ActiveLoadingState)
         {
             case LoadingState.Inactive:
                 break;
             case LoadingState.Loading:
-                if (!handle.IsDone)
+                if (handle.IsValid() && handle.Status == AsyncOperationStatus.Succeeded)
                 {
                     ActiveLoadingState = LoadingState.Success;
                 }
@@ -87,7 +89,7 @@ public class SceneLoader : MonoBehaviour
     public void LoadSceneByName(string sceneName)
     {
         Debug.Log("Loading scene by name : " + sceneName);
-        SceneManager.LoadScene(sceneName);
+        Instance.StartCoroutine(Instance.StartLoadSceneByName(sceneName));
     }
 
     public void LoadSceneByAddress(string address)
@@ -96,7 +98,7 @@ public class SceneLoader : MonoBehaviour
         {
             Instance.ActiveLoadingState = LoadingState.Loading;
             Debug.Log("Loading scene by address : " + address);
-            Instance.StartCoroutine(Instance.StartLoad(address));
+            Instance.StartCoroutine(Instance.StartAddressablesLoadScene(address));
         }
     }
 
@@ -105,21 +107,27 @@ public class SceneLoader : MonoBehaviour
 
     #region PRIVATE_METHODS
 
-    private IEnumerator StartLoad(string address)
+    private IEnumerator StartLoadSceneByName(string sceneName)
+    {
+        yield return StartCoroutine(FadeLoadingScreen(1, 0.2f));
+        AsyncOperation handle = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+        while (!handle.isDone)
+        {
+            yield return null;
+        }
+        yield return StartCoroutine(FadeLoadingScreen(0, 0.2f));
+    }
+
+    private IEnumerator StartAddressablesLoadScene(string address)
     {
         yield return StartCoroutine(FadeLoadingScreen(1, 0.3f));
-
-        yield return StartCoroutine(Rotate(0.5f));
-        yield return StartCoroutine(Rotate(0.5f));
-        yield return StartCoroutine(Rotate(0.5f));
-
         handle = Addressables.LoadSceneAsync(address, LoadSceneMode.Single, true);
-        while (ActiveLoadingState == LoadingState.Loading)
+        do
         {
             yield return StartCoroutine(Rotate(0.5f));
-        }
-
+        } while (ActiveLoadingState == LoadingState.Loading);
         yield return StartCoroutine(FadeLoadingScreen(0, 0.3f));
+        m_loadingLogo.fillAmount = 0;
     }
 
     private IEnumerator FadeLoadingScreen(float targetValue, float duration)
