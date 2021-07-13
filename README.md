@@ -4,39 +4,44 @@
 <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License"></a>
 </p>
 
-## About « 3DM XR - Mixed Reality »
+## About « Argon XR - Mixed Reality »
 
-3DM XR is meant to be a platform to host architectural, educational and artistic projects that use augmented reality and virtual reality technologies. From apartment plans or site plans, 3D models are made. The Vuforia framework allows to augment augmented reality targets, by superimposing 3D models. We can also make virtual tours inside the projects, using 360 degree images or real time renderings.
+Argon XR is the main product of the company Argon Studio. It is an Android and iOS application exploiting augmented reality and virtual reality technologies for fields related to architecture, art and education.
 
-In June 2020, a redesign of the platform was done and a new application launched. Our projects are now available on [Argon XR - Mixed Reality](https://github.com/ArgonStudioSNC/ArgonXR). 
+The application is presented as a platform hosting the various projects we carry out. Each project is specific to the needs and demands of our clients.
 
-### Download links 
+### Target audience
 
-- [GooglePlay](https://play.google.com/store/apps/details?id=com.ThirdDimensionMedia.MixedReality)
-- [App Store](https://apps.apple.com/ch/app/3dm-xr-mixed-reality/id1437366723)
+- For architects - an help for the planning of the integration of buildings in their existing or future environment.
+- For real estate promoters - give potential buyers of a property the possibility to immerse themselves in their future home, and to feel the sizes and spaces represented on the plans by augmenting them in augmented reality.
+- For artists - new possibilities of creation via the augmentation of artworks by 3D and interactivity.
+- For universities - the introduction to students of the opportunities brought by mixed reality technologies.
 
-### List of projects by years
-#### 2019
-- Wegmatten, Allschwil. AR+VR architecture for Brick Development Ost AG
-- Jolimont. Augmented reality shadow projection for IMJU SA
-- SAAR. Augmented reality street art exhibition in the streets of Fribourg, in partnership with the HEIA-FR
-#### 2020
-- Bahnhofsareal Altdorf. AR+VR architecture for Brick Development
-- Jardin du Paradis. Augmented reality project demo for real estate development
-- Christmas card 2020 3DM+Argon in augmented reality
+### Get the app
+
+- [GooglePlay](https://play.google.com/store/apps/details?id=com.argonstudio.xr)
+- [App Store](https://apps.apple.com/ch/app/argon-xr-mixed-reality/id1530730395)
 
 ### Screenshots
 
 <div style="display:flex;">
-  <img src="https://raw.githubusercontent.com/ArgonStudioSNC/ArgonXR/main/.github/screenshots-lockup/apple-1.jpg" width="200">
-  <img src="https://raw.githubusercontent.com/ArgonStudioSNC/ArgonXR/main/.github/screenshots-lockup/apple-2.jpg" width="200">
-  <img src="https://raw.githubusercontent.com/ArgonStudioSNC/ArgonXR/main/.github/screenshots-lockup/apple-3.jpg" width="200">
-  <img src="https://raw.githubusercontent.com/ArgonStudioSNC/ArgonXR/main/.github/screenshots-lockup/apple-4.jpg" width="200">
+  <img src="https://raw.githubusercontent.com/ArgonStudioSNC/ArgonXR/main/.github/screenshots-lockup/apple-1.jpg" width="180">
+  <img src="https://raw.githubusercontent.com/ArgonStudioSNC/ArgonXR/main/.github/screenshots-lockup/apple-2.jpg" width="180">
+  <img src="https://raw.githubusercontent.com/ArgonStudioSNC/ArgonXR/main/.github/screenshots-lockup/apple-3.jpg" width="180">
+  <img src="https://raw.githubusercontent.com/ArgonStudioSNC/ArgonXR/main/.github/screenshots-lockup/apple-4.jpg" width="180">
 </div>
-  
-## Technologies
 
-Unity3D, Vuforia, C#, Blender
+## Technologies 
+
+[Blender](https://www.blender.org/), [Unity3D](https://unity.com/), C#, Unity Addressable Package, [Vuforia Engine](https://developer.vuforia.com/) framework, ARkit, ARCore, Git, Xcode, Unity Cloud Content Delivery (CCD)
+
+### Current versions
+
+- Unity Hub version : 2.4.4
+- Unity Version : 2021.1.14f1
+- Vuforia Engine : 9.8.8
+- Addressables package : 1.16.19
+- Xcode 12.5
 
 ## License
 
